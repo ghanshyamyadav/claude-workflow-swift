@@ -1,0 +1,28 @@
+{
+  "name": "claude-workflow-swift",
+  "version": "1.0.0",
+  "description": "Install Claude Code workflow commands for Swift/Xcode projects",
+  "bin": {
+    "claude-workflow-swift": "bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "commands/"
+  ],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "workflow",
+    "swift",
+    "xcode",
+    "ios"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ghanshyamyadav/claude-workflow-swift.git"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

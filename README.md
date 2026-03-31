@@ -2,7 +2,7 @@
 
 Claude Code workflow commands for Swift/Xcode projects.
 
-Installs `/workflow:*` slash commands globally into Claude Code, enabling structured, memory-efficient feature development in any Swift or Xcode project.
+Installs `/workflow-swift:*` slash commands globally into Claude Code, enabling structured, memory-efficient feature development in any Swift or Xcode project.
 
 ## Installation
 
@@ -18,12 +18,12 @@ Commands are copied to `~/.claude/commands/workflow/`, making them available in 
 
 | Command | Description |
 |---|---|
-| `/workflow:init` | Scan project and build `.workflow/project/` memory files |
-| `/workflow:task` | Start a task: plan, decompose into steps, execute |
-| `/workflow:status` | Show all tasks and step-level progress |
-| `/workflow:resume` | Resume a blocked or in-progress task |
-| `/workflow:close` | Finalize a task: write summary, update project memory |
-| `/workflow:update` | Refresh stale project memory after merges or refactors |
+| `/workflow-swift:init` | Scan project and build `.workflow/project/` memory files |
+| `/workflow-swift:task` | Start a task: plan, decompose into steps, execute |
+| `/workflow-swift:status` | Show all tasks and step-level progress |
+| `/workflow-swift:resume` | Resume a blocked or in-progress task |
+| `/workflow-swift:close` | Finalize a task: write summary, update project memory |
+| `/workflow-swift:update` | Refresh stale project memory after merges or refactors |
 
 ## Quick Start
 
@@ -32,19 +32,19 @@ Commands are copied to `~/.claude/commands/workflow/`, making them available in 
 npx github:ghanshyamyadav/claude-workflow-swift
 
 # 2. In your Xcode or SPM project, open Claude Code and run:
-/workflow:init
+/workflow-swift:init
 
 # 3. Start a task
-/workflow:task Add dark mode support
+/workflow-swift:task Add dark mode support
 ```
 
 ## How It Works
 
 Workflow gives Claude Code structured memory and disciplined exploration for your Swift projects:
 
-- **`/workflow:init`** — run once per project. Maps your Swift types, architecture pattern, and data flows into small indexed files under `.workflow/project/`.
-- **`/workflow:task`** — each task gets its own workspace with a plan, step tracker, and summary. Claude reads only what's relevant.
-- **`/workflow:update`** — keeps project memory fresh after merges or large refactors.
+- **`/workflow-swift:init`** — run once per project. Maps your Swift types, architecture pattern, and data flows into small indexed files under `.workflow/project/`.
+- **`/workflow-swift:task`** — each task gets its own workspace with a plan, step tracker, and summary. Claude reads only what's relevant.
+- **`/workflow-swift:update`** — keeps project memory fresh after merges or large refactors.
 
 ## Requirements
 
